@@ -1,5 +1,6 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -15,6 +16,7 @@ public class SelenideUITest {
     LoginSuccessSelenide successPage = new LoginSuccessSelenide();
     @BeforeEach
     public void start(){
+        WebDriverManager.chromedriver().setup();
         open(ConfProperties.getProperty("loginpage"));
         getWebDriver().manage().window().maximize();
     }
