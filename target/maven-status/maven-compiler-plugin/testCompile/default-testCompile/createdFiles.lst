@@ -1,0 +1,14 @@
+tests\classesInterface\PetsTests.class
+tests\classesInterface\DogTests.class
+tests\SelenideUITestLight.class
+tests\LoginSuccessSelenium.class
+tests\LoginSuccessSelenide.class
+tests\ConfProperties.class
+tests\classesInterface\CatTests.class
+tests\SeleniumUITest.class
+tests\SelenideUITest.class
+tests\LoginPageSelenium.class
+tests\SeleniumUITestLight.class
+tests\LoginPageSelenide.class
+tests\ya\ru\HomePage.class
+tests\ya\ru\searchWebTest.class
