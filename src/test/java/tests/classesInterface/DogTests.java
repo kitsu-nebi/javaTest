@@ -28,4 +28,27 @@ public class DogTests {
         dog1.setWeight(10);
         Assertions.assertEquals(dog1.getWeight(),10);
     }
+
+    @Test
+    @Tag("test-dog")
+    @Tag("test-array-dog")
+    @DisplayName("Test Dog name in list")
+    public void dogsArrayTest(){
+        Dog[] dogs = new Dog[3];
+        dogs[0]=new Dog();
+        dogs[1]=new Dog();
+        dogs[0].setName("First");
+        dogs[1].setName("Second");
+        dogs[2]=dogs[1];
+        Assertions.assertEquals(dogs[2].getName(),"Second");
+    }
+
+    @Test
+    @Tag("test-dog")
+    @Tag("test-dog-bark-3")
+    @DisplayName("Test Dog bark 3 times")
+    public void dogBarkCountTest(){
+        Dog dog1 = new Dog();
+        Assertions.assertEquals(dog1.bark(3),"Bark!Bark!Bark!");
+    }
 }

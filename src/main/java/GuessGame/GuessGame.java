@@ -6,12 +6,13 @@ public class GuessGame {
         Player p2 = new Player();
         Player p3 = new Player();
         //Загадываем число от 0 до 9
-        Integer res = (int)(Math.random()*10);
+        int res = (int)(Math.random()*10);
         System.out.println("Загаданное число"+ res);
         // Получаем результаты игроков
-        Integer guess1 = p1.guess();
-        Integer guess2 = p2.guess();
-        Integer guess3 = p3.guess();
+        int guess1 = p1.guess();
+        int guess2 = p2.guess();
+        int guess3 = p3.guess();
+        int ss =7;
         //
         Boolean isRight1= false;
         Boolean isRight2= false;
